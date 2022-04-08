@@ -22,16 +22,29 @@
 
 
 // Feature a loop to retry an operation you know might fail, such as checking whether a thread has completed its job. You might also need to pass the result of that operation out of the loop to the rest of your code. 
+// fn main() {
+//   let mut counter = 0;
+
+//   let result = loop {
+//     counter += 1;
+
+//     if counter == 10 {
+//       break counter * 2;
+//     }
+//   };
+
+//   println!("the result is {}", result);
+// }
+
+// Conditional loops with while: While a condition holds true, the code runs; otherwise it exits the loop
 fn main() {
-  let mut counter = 0;
+  let mut number = 3;
 
-  let result = loop {
-    counter += 1;
+  while number != 0 {
+    println!("{}!", number);
 
-    if counter == 10 {
-      break counter * 2;
-    }
-  };
+    number -= 1;
+  }
 
-  println!("the result is {}", result);
+  println!("LIFTOFF!!!");
 }
