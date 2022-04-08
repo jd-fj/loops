@@ -37,14 +37,43 @@
 // }
 
 // Conditional loops with while: While a condition holds true, the code runs; otherwise it exits the loop
+// fn main() {
+//   let mut number = 3;
+
+//   while number != 0 {
+//     println!("{}!", number);
+
+//     number -= 1;
+//   }
+
+//   println!("LIFTOFF!!!");
+// }
+
+// LOOPING through a collection with for: DO NOT USE THIS BELOW CODE, it is prone to errors
+// fn main() {
+//   let a = [10, 20, 30, 40, 50];
+//   let mut index = 0;
+
+//   while index < 5 {
+//     println!("The value is: {}", a[index]);
+
+//     index += 1;
+//   }
+// }
+
+// instead, a better way to write it is;
+// fn main() {
+//   let a = [10, 20, 30, 40, 50];
+
+//   for element in a {
+//     println!("the value is: {}", element);
+//   }
+// }
+
+// rewriting the liftoff countdown code with for loops
 fn main() {
-  let mut number = 3;
-
-  while number != 0 {
+  for number in (1..4).rev() {
     println!("{}!", number);
-
-    number -= 1;
   }
-
   println!("LIFTOFF!!!");
 }
